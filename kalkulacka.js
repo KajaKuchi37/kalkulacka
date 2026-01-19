@@ -7,7 +7,7 @@ function nactiCisla() {
     const b = parseFloat(vstup2.value);
 
     if (isNaN(a) || isNaN(b)) {
-        vysledek.innerHTML = "❌ Zadej platná čísla";
+        vysledek.innerHTML = "Zadej platná čísla";
         return null;
     }
     return [a, b];
@@ -36,7 +36,7 @@ document.getElementById("tlDeleno").onclick = function () {
     if (!cisla) return;
 
     if (cisla[1] === 0) {
-        vysledek.innerHTML = "❌ Nelze dělit nulou";
+        vysledek.innerHTML = "Nelze dělit nulou";
         return;
     }
 
